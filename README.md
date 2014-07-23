@@ -28,6 +28,7 @@ $tabela = 'cliente';
 $db     = 'banco_vendas';
 
 //SETANDO VALORES INSERT NO OBJETO E EXECUTANDO.
+require_once 'Executaq.class.php';
 $objExecq = new Executaq($db);
 $objExecq->dados = $dados;
 $objExecq->tabela = $tabela;
